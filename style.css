@@ -47,6 +47,7 @@ h2 {
 .list-container {
   margin-top: 5rem;
 }
+
 .lists {
   list-style-type: none;
   padding-left: 0;
@@ -54,14 +55,23 @@ h2 {
 
 .list_div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: #9c88ff;
   color: #fff;
   margin-bottom: 20px;
   padding: 5px 15px;
   border-radius: 15px;
   box-shadow: 0 15px 15px 0 rgba(206, 99, 252, 0.2);
+  transition: all 1s ease;
+}
+
+.list_div.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.list_div > li {
+  flex: 1;
+  width: 50px;
 }
 
 .list_div > button {
@@ -86,4 +96,14 @@ h2 {
 
 .list_div > button > i {
   pointer-events: none;
+}
+
+.list_div.completed {
+  opacity: 0.3;
+}
+
+.list_div.completed li {
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: #c0392b;
 }
