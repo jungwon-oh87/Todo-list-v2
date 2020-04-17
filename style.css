@@ -18,6 +18,40 @@ h2 {
   min-height: 10rem;
 }
 
+.form {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.select_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-todo {
+  margin: 0 20px;
+  outline: none;
+  color: #222;
+  width: 10rem;
+  border-radius: 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  font-size: 16px;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  color: #222;
+  pointer-events: none;
+}
+
 .input-container {
   position: relative;
   flex-direction: row;
@@ -65,7 +99,7 @@ h2 {
 }
 
 .list_div.fall {
-  transform: translateY(8rem) rotateZ(20deg);
+  transform: translateY(10rem) rotateZ(20deg);
   opacity: 0;
 }
 

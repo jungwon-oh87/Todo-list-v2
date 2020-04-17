@@ -27,17 +27,24 @@
             <i class="far fa-plus-square fa-2x"></i>
           </button>
         </div>
+        <div class="select_container">
+          <select class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incompleted">incompleted</option>
+          </select>
+          <div class="arrow-container"><i class="fas fa-chevron-down"></i></div>
+        </div>
       </form>
       <div class="list-container">
-        <ul class="lists" id="lists">
-          <!-- 
-          <div class="list_div">
-            <li>javascript</li>
-            <button class="complete_btn"><i class="fas fa-check"></i></button>
-            <button class="trash_btn"><i class="fas fa-trash"></i></button>
-          </div>
-          -->
-        </ul>
+        <ul class="lists" id="lists"></ul>
+        <!-- it belongs to ul
+            <div class="list_div">
+              <li>javascript</li>
+              <button class="complete_btn"><i class="fas fa-check"></i></button>
+              <button class="trash_btn"><i class="fas fa-trash"></i></button>
+            </div>
+            -->
       </div>
     </div>
     <script src="./script.js"></script>
